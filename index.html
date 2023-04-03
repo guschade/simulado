@@ -14,41 +14,62 @@
       <hr>
     </header>
     <main>
+      <hr>
       <p class="linha1">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/9uAcNpLqLaM"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
+        <img src="https://img.r7.com/images/2015/02/25/1hsqr097mm_4chkfhtr1u_file?dimensions=771x420&no_crop=true">
       </p>
       <p class="linha1">
-        <a href="https://www.youtube.com/watch?v=9uAcNpLqLaM">
+        <a href="https://youtu.be/KTAOokw7qng">
          <button type="button" onclick="alert('Hello world!')">Call to action!</button>
         </a>
       </p>
-       <section>
-         <h2>Comentários</h2>
-         <form>
-           <label for="name">Nome:</label>
-           <input type="text" id="name" name="name"><br>
+      <hr>
+      <section>
+        <hr>
+        <div class="vertical-line">
+          <h1 class="comentarios-titulo">Comentários:</h1>
+            <form id="myForm">
+              <div>
+               <label for="name">Nome:</label>
+               <input type="text" id="name" name="name"><br>
+              </div>
 
-           <label for="email">E-mail:</label>
-           <input type="email" id="email" name="email"><br>
+             <div>
+               <label for="email">E-mail:</label>
+               <input type="email" id="email" name="email"><br>
+             </div>
 
-           <label for="comment">Comente:</label>
-           <textarea id="comment" name="comment"></textarea><br>
+             <div>
+               <label for="comment">Comente:</label>
+               <textarea id="comment" name="comment"></textarea><br>
+             </div>
+             
+             <div>
+               <button type="submit">Enviar</button>
+            </div>
+            </form>
 
-           <button type="submit">Enviar</button>
-         </form>
+        </div>
+        <main>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BfcPt8T1sDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </main>
+        <hr>
+     </section>
        <footer>
-       <hr>
-       <p class="linha2">ABOUT US | CONTACT US | AUTHORIZED DEALERS</p>
-       <hr>
-      </footer>
+         <hr>
+         <p class="linha2">ABOUT US  |  CONTACT US  |  AUTHORIZED DEALERS</p>
+         <hr>
+       </footer>
     </main>
-  </body>
+    
+    <script>
+      var form = document.querySelector('#myForm');
+      var enviarButton = document.querySelector('#enviar');
+    
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // previne o envio do formulário padrão
+        alert('O formulário foi enviado com sucesso!');
+      });
+    </script>
+   </body>
 </html>
