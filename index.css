@@ -1,41 +1,67 @@
-h1{
+header{
     text-align: center;
-}
+    background-color: gray;
+}  
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-}
+} 
+
 p.linha1{
     text-align: center;
 }
+
 p.linha2{
     text-align: center;
     background-color: gray;
 }
-h2{
-    justify-content: flex-end
+
+.comentarios-titulo {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
 form{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: left;
 }
-  
+
+.vertical-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-right: 2px solid black;
+    padding: 0 10px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}  
+
 label{
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
   
-input, textarea {
+input, textarea{
     padding: 0.5rem;
     border-radius: 4px;
     border: 1px solid #ccc;
     margin-bottom: 1rem;
 }
-  
+
 button{
-    padding: 0.5rem 1
-}  
+    padding: 0.5rem 1rem;
+}
+  
 footer{
     text-align: left;
     background-color: gray;
